@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Restro Bro | Restaurant & Café Setup Experts</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Full Header + Hero -->
+
+<!-- Top Navigation -->
+<header class="top-header">
+    <div class="nav-container">
+      <div class="logo">Restro Bro</div>
+      <nav class="nav-links">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="work.html">Our Work</a> <!-- Open new page -->
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header>
+  
+<!-- 
+  <header class="top-header">
+    <div class="nav-container">
+      <div class="logo">Restro Bro</div>
+      
+      <div class="hamburger" onclick="toggleMenu()">&#9776;</div> 
+  
+      <nav class="nav-links" id="navLinks">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#services">Services</a>
+        <a href="work.html">Our Work</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </div>
+  </header> -->
+  
+
+  <!-- Hero Section -->
+  <section class="hero" id="home">
+    <div class="container">
+      <h1 class="fade-in">Restro Bro</h1>
+      <p class="fade-in delay-1">Your Big Bro in Restaurant & Café Success.</p>
+      <a href="#services" class="btn fade-in delay-2">Explore Our Services</a>
+    </div>
+  </section>
+  
+<!-- Hero Section
+<header class="hero">
+  <div class="container">
+    <h1 class="fade-in">Restro Bro</h1>
+    <p class="fade-in delay-1">Your Big Bro in Restaurant & Café Success.</p>
+    <a href="#services" class="btn fade-in delay-2">Explore Our Services</a>
+  </div>
+</header> -->
+
+<!-- About Section -->
+<section class="about" id="about">
+  <div class="container fade-in">
+    <h2>About Us</h2>
+    <p>At Restro Bro, we specialize in helping you set up your dream restaurant or café — from full kitchen setups to urgent chef staffing and custom recipe development.</p>
+  </div>
+</section>
+
+<!-- Services Section -->
+<section class="services" id="services">
+  <div class="container fade-in">
+    <h2>Our Services</h2>
+    <div class="service-grid">
+      <div class="service-card" onclick="openForm('Kitchen Setup')">
+        <h3>Kitchen Setup</h3>
+        <p>Complete restaurant kitchen design and setup.</p>
+      </div>
+      <div class="service-card" onclick="openForm('Recipes Development')">
+        <h3>Recipes Development</h3>
+        <p>Innovative menu and recipe creation for your brand.</p>
+      </div>
+      <div class="service-card" onclick="openForm('Chef Training')">
+        <h3>Chef Training</h3>
+        <p>Professional chef and kitchen staff training programs.</p>
+      </div>
+      <div class="service-card" onclick="openForm('Urgent Chef Staffing')">
+        <h3>Urgent Chef Staffing</h3>
+        <p>Quick chef supply service for emergencies and short notice.</p>
+      </div>
+      <div class="service-card" onclick="openForm('New Restro Setup')">
+        <h3>New Restro Setup</h3>
+        <p>End-to-end setup for your brand new restaurant or café.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Modal Contact Form -->
+<div class="modal" id="contactModal">
+  <div class="modal-content">
+    <span class="close" onclick="closeForm()">&times;</span>
+    <h2>Enquire About Our Service</h2>
+    <form id="contactForm">
+      <input type="hidden" id="serviceType" name="serviceType" value="">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Inquiry</button>
+    </form>
+  </div>
+</div>
+
+<!-- Bottom Contact Form -->
+<section class="contact" id="contact">
+  <div class="container fade-in">
+    <h2>Contact Us</h2>
+    <p>Have any questions or want to start your project? We'd love to hear from you!</p>
+    <form id="bottomContactForm">
+      <input type="text" name="name" placeholder="Your Name" required>
+      <input type="email" name="email" placeholder="Your Email" required>
+      <input type="text" name="phone" placeholder="Your Phone Number" required>
+      <textarea name="message" placeholder="Your Message" required></textarea>
+      <button type="submit" class="btn">Send Message</button>
+    </form>
+  </div>
+</section>
+
+<!-- Footer -->
+<footer>
+  <div class="container">
+    <p><strong>Contact:</strong> contact@restrobro.com | 📍 Rohtak, Haryana, India</p>
+    <p>© 2025 Restro Bro. All rights reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
