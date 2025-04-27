@@ -17,6 +17,9 @@ function openForm(serviceType) {
   document.getElementById('contactForm').addEventListener('submit', function(event) {
     event.preventDefault(); // Prevent the default form submission
 
+// Show loader
+document.getElementById('loader').style.display = 'block';
+
     const formData = new FormData(this);
     const data = {
       serviceType: formData.get('serviceType'),
@@ -52,7 +55,12 @@ function openForm(serviceType) {
     })
     .catch(error => {
       alert('Something went wrong. Please try again later.');
+    })
+    .finally(() => {
+      // Always hide loader when done
+      document.getElementById('loader').style.display = 'none';
     });
+
 });
 
 
@@ -61,6 +69,9 @@ function openForm(serviceType) {
 // Form submission handler for the contact form at the bottom of the page
 document.getElementById('bottomContactForm').addEventListener('submit', function(event) {
   event.preventDefault(); // Prevent the default form submission
+
+  // Show loader
+  document.getElementById('loader').style.display = 'block';
 
   const formData = new FormData(this);
   const data = {
@@ -94,8 +105,13 @@ document.getElementById('bottomContactForm').addEventListener('submit', function
   })
   .catch(error => {
     alert('Something went wrong. Please try again later.');
+  })
+  .finally(() => {
+    // Always hide loader when done
+    document.getElementById('loader').style.display = 'none';
   });
 });
+
 
 
 
